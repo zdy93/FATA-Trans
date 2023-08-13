@@ -1,5 +1,5 @@
 # FATA-Trans
-This repository is the official implementation of the **CIKM2023** paper "FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data". Code are mostly adapted from [Tabular Transformers for Modeling Multivariate Time Series](https://github.com/IBM/TabFormer#tabular-transformers-for-modeling-multivariate-time-series).
+This repository is the official implementation of the **CIKM2023** paper "FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data". Some code scripts are adapted from [Tabular Transformers for Modeling Multivariate Time Series](https://github.com/IBM/TabFormer#tabular-transformers-for-modeling-multivariate-time-series).
 
 ## Requirement
 ### Language
@@ -26,4 +26,6 @@ Amazon product reviews datasets are available at [here](https://nijianmo.github.
 1. run [preprocess_IBM_v2.ipynb](./preprocess_IBM_v2.ipynb) or [preprocess_amazon_liang.ipynb](./preprocess_amazon_liang.ipynb) to split the dataset raw files into train/val/test csv files.
 2. run [preload_dataset.ipynb](./preload_dataset.ipynb) to excute the first stage processing.
 3. run either [process_IBM_dataset.ipynb](./process_IBM_dataset.ipynb) or [process_amazon_dataset.ipynb](./process_amazon_dataset.ipynb) to get the model-specific dataset.
-4. run files named as "run_main_....ipynb" to pretrain, finetune, train from scratch, or expert embeddings from the model. 
+4. run files named as "run_main_....ipynb" to pretrain, finetune, train from scratch, or expert embeddings from a model. (You can also directly run with [main_ibm.py](./main_ibm.py) or [main_amazon.py](./main_amazon.py)).
+
+Linux bash scripts under the directory [sh_commands](./sh_commands) can be used to run these jupyter notebooks mentioned above with the Python module papermill (we used the version 2.4.0). For model or dataset specfic settings, you are reffered to these bash scripts.
