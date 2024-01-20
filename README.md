@@ -1,5 +1,5 @@
 # FATA-Trans
-This repository is the official implementation of the **CIKM2023** paper "FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data". Some code scripts are adapted from [Tabular Transformers for Modeling Multivariate Time Series](https://github.com/IBM/TabFormer#tabular-transformers-for-modeling-multivariate-time-series).
+This repository is the official implementation of the **CIKM2023** paper ["FATA-Trans: Field And Time-Aware Transformer for Sequential Tabular Data"](https://doi.org/10.1145/3583780.3614879). Some code scripts are adapted from [Tabular Transformers for Modeling Multivariate Time Series](https://github.com/IBM/TabFormer#tabular-transformers-for-modeling-multivariate-time-series).
 
 ## Requirement
 ### Language
